@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zgcenv.elip.auth.dao.OauthUserLoginDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zgcenv.elip.auth.entity.OauthUserLogin">
+        <id column="USER_NAME" property="userName" />
+        <result column="PROVIDER_NAME" property="providerName" />
+        <result column="PROVIDER_USER_ID" property="providerUserId" />
+        <result column="PROVIDER_USER_NAME" property="providerUserName" />
+        <result column="NICK_NAME" property="nickName" />
+        <result column="IMAGE_URL" property="imageUrl" />
+        <result column="LOCATION" property="location" />
+        <result column="REMARK" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        USER_NAME, PROVIDER_NAME, PROVIDER_USER_ID, PROVIDER_USER_NAME, NICK_NAME, IMAGE_URL, LOCATION, REMARK
+    </sql>
+
+</mapper>

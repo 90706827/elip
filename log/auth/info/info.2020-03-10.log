@@ -1,0 +1,698 @@
+2020-03-10 10:37:55 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 10:37:56 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 10:37:56 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 10:37:56 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-03-10 10:37:56 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=9cb53732-1228-374e-9242-b00946b675bb
+2020-03-10 10:37:56 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$77c44678] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1d247525' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 10:37:57 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 10:37:57 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 10:37:57 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 10:37:57 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 10:37:57 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 10:37:57 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 2216 ms
+2020-03-10 10:37:57 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 10:37:57 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@68b366e2
+2020-03-10 10:37:57 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 10:37:58 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 10:37:58 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 10:37:58 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 10:37:59 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 10:37:59 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 10:37:59 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 10:37:59 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 10:37:59 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 10:37:59 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 10:37:59 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 10:37:59 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 10:37:59 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2020-03-10 10:37:59 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-10 21:10:32 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 21:10:32 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 21:10:32 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 21:10:33 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-03-10 21:10:33 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=b8fea7cd-2ad3-37d4-bff5-4f2f1a1230f1
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$429c5c92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d354a3e' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 21:10:33 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 21:10:33 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 21:10:33 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 21:10:33 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 21:10:33 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 21:10:33 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1635 ms
+2020-03-10 21:10:33 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 21:10:33 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@698d6d30
+2020-03-10 21:10:34 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 21:10:34 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 21:10:34 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 21:10:34 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 21:10:35 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 21:10:35 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 21:10:35 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 21:10:35 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 21:10:35 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 21:10:35 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 21:10:35 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 21:10:35 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 21:10:35 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2020-03-10 21:10:35 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-10 22:14:53 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:14:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:14:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:14:53 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-03-10 22:14:54 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=b8fea7cd-2ad3-37d4-bff5-4f2f1a1230f1
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$75323f5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4fd05028' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:14:54 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:14:54 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:14:54 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:14:54 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:14:54 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:14:54 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1413 ms
+2020-03-10 22:14:54 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:14:54 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@9f674ac
+2020-03-10 22:14:54 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:14:55 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:14:55 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:14:55 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:14:55 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:14:55 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:14:55 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:14:55 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:14:56 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 22:14:56 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 22:14:56 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 22:14:56 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 22:14:56 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2020-03-10 22:14:56 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-10 22:15:43 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:15:44 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:15:44 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:15:44 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-03-10 22:15:44 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=b8fea7cd-2ad3-37d4-bff5-4f2f1a1230f1
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$8e6cfa04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@11c88cca' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:44 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:15:45 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:15:45 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:15:45 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:15:45 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:15:45 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:15:45 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1559 ms
+2020-03-10 22:15:45 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:15:45 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7e18ced7
+2020-03-10 22:15:45 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:15:45 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:15:45 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:15:45 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:15:46 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:15:46 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:15:46 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:15:46 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:15:46 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 22:15:46 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 22:15:46 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 22:15:46 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 22:15:46 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2020-03-10 22:15:46 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-10 22:16:04 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:16:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:16:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:16:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-03-10 22:16:05 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=b8fea7cd-2ad3-37d4-bff5-4f2f1a1230f1
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3e07975d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@350da119' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:16:05 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:16:05 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:16:05 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:16:05 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:16:05 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:16:05 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1509 ms
+2020-03-10 22:16:05 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:16:05 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@23f60b7d
+2020-03-10 22:16:05 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:16:06 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:16:06 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:16:06 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:16:06 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:16:06 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:16:06 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:16:06 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:16:07 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 22:16:07 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 22:16:07 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 22:16:07 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 22:16:07 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2020-03-10 22:16:07 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-10 22:24:28 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:24:28 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:24:28 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:24:28 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-03-10 22:24:29 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=b8fea7cd-2ad3-37d4-bff5-4f2f1a1230f1
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$35c28139] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@59c43561' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:24:29 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:24:29 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:24:29 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:24:29 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:24:29 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:24:29 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1542 ms
+2020-03-10 22:24:29 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:24:29 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@44aa91e2
+2020-03-10 22:24:29 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:24:30 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:24:30 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:24:30 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:24:30 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:24:30 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:24:30 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:24:30 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:24:31 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 22:24:31 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 22:24:31 INFO  main com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 22:24:31 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 22:24:31 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2020-03-10 22:24:31 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-10 22:26:31 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:26:31 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:26:31 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:26:31 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-03-10 22:26:32 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=b8fea7cd-2ad3-37d4-bff5-4f2f1a1230f1
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$461ee391] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@512abf25' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:26:32 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:26:32 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:26:32 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:26:32 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:26:32 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:26:32 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1511 ms
+2020-03-10 22:26:32 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:26:32 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@34fcd292
+2020-03-10 22:26:32 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:26:33 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:26:33 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:26:33 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:26:34 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:26:34 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:26:34 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:26:34 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-authenticationManagerBean
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-endpoints
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-tokenStore
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-ClientDetailsServiceConfigurer
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-jwtAccessTokenConverter
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-defaultTokenServices
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-oAuth2RequestFactory
+2020-03-10 22:26:34 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-resourceOwnerPasswordTokenGranter
+2020-03-10 22:26:35 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-security
+2020-03-10 22:26:35 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-configure-auth
+2020-03-10 22:26:35 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-configure-http
+2020-03-10 22:26:35 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure ResourceServerConfigure-configure-resources
+2020-03-10 22:26:35 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure ResourceServerConfigure-configure-http
+2020-03-10 22:26:35 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure /captcha
+2020-03-10 22:26:35 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f2afa8b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b3d03b2, org.springframework.security.web.header.HeaderWriterFilter@5f26cb8b, org.springframework.security.web.authentication.logout.LogoutFilter@7ffe8a82, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f996445, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@332fa6ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77978658, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b2efcae, org.springframework.security.web.session.SessionManagementFilter@162e29a1, org.springframework.security.web.access.ExceptionTranslationFilter@15a8bbe5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a663a45]
+2020-03-10 22:26:35 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48788853, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e976553, org.springframework.security.web.header.HeaderWriterFilter@c8531b9, org.springframework.security.web.authentication.logout.LogoutFilter@185b7cc6, com.zgcenv.elip.common.filter.ValidateCodeFilter@13d1f898, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c108c05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@193d7ac7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ac77269, org.springframework.security.web.session.SessionManagementFilter@3adbd038, org.springframework.security.web.access.ExceptionTranslationFilter@2a191f83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@758d0555]
+2020-03-10 22:26:35 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5002be8e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b3a95d9, org.springframework.security.web.header.HeaderWriterFilter@478cebdb, org.springframework.security.web.authentication.logout.LogoutFilter@6fbfd28b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@248b2091, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c3c31a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71f437d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5186c801, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39fb5ddf, org.springframework.security.web.session.SessionManagementFilter@5464aeec, org.springframework.security.web.access.ExceptionTranslationFilter@350be5ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b24d5e4]
+2020-03-10 22:26:35 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:26:35 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-10 22:26:36 INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-10 22:26:36 INFO  main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
+2020-03-10 22:26:36 INFO  main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
+2020-03-10 22:26:36 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
+2020-03-10 22:26:36 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
+2020-03-10 22:26:36 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
+2020-03-10 22:26:36 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
+2020-03-10 22:26:36 INFO  main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Application version is -1: true
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1583850397509 with initial instances count: 0
+2020-03-10 22:26:37 INFO  main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application AUTH with eureka with status UP
+2020-03-10 22:26:37 INFO  main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1583850397514, current=UP, previous=STARTING]
+2020-03-10 22:26:37 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802: registering service...
+2020-03-10 22:26:37 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:26:37 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8802 (http) with context path '/auth'
+2020-03-10 22:26:37 INFO  main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8802
+2020-03-10 22:26:37 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802 - registration status: 204
+2020-03-10 22:26:37 INFO  main com.zgcenv.elip.auth.AuthApplication Started AuthApplication in 7.528 seconds (JVM running for 8.738)
+2020-03-10 22:26:37 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner   _   _   _   _   _   _   _   _
+2020-03-10 22:26:37 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner  / \ / \ / \ / \ / \ / \ / \ / \
+2020-03-10 22:26:37 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner ( c | o | m | p | l | e | t | e )
+2020-03-10 22:26:37 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
+2020-03-10 22:26:37 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner Auth 启动完毕，时间：2020-03-10T22:26:37.750
+2020-03-10 22:26:38 INFO  boundedElastic-1 io.lettuce.core.EpollProvider Starting without optional epoll library
+2020-03-10 22:26:38 INFO  boundedElastic-1 io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2020-03-10 22:26:38 INFO  RMI TCP Connection(3)-192.168.43.88 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-10 22:26:38 INFO  RMI TCP Connection(3)-192.168.43.88 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-03-10 22:26:38 INFO  RMI TCP Connection(3)-192.168.43.88 org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:40 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:43 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:46 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:49 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:52 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:55 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:26:58 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Application version is -1: false
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:27:01 INFO  DiscoveryClient-CacheRefreshExecutor-0 com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:28:21 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:28:21 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:28:21 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:28:21 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:28:21 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:28:32 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.service.impl.UserDetailService loadUserByUsername
+2020-03-10 22:28:44 INFO  http-nio-8802-exec-1 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 22:31:30 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:31:30 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:31:30 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:31:30 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:31:30 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:31:37 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 22:31:43 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.service.impl.UserDetailService loadUserByUsername
+2020-03-10 22:32:21 INFO  http-nio-8802-exec-4 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 22:32:29 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:32:29 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:32:29 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:32:29 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:32:29 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:32:35 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.service.impl.UserDetailService loadUserByUsername
+2020-03-10 22:32:53 INFO  http-nio-8802-exec-6 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.service.impl.UserDetailService loadUserByUsername
+2020-03-10 22:33:00 INFO  http-nio-8802-exec-7 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 22:33:14 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:33:14 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:33:14 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:33:14 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:33:14 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:33:31 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.service.impl.UserDetailService loadUserByUsername
+2020-03-10 22:35:13 INFO  DiscoveryClient-CacheRefreshExecutor-2 org.apache.http.impl.client.DefaultHttpClient I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8801: The target server failed to respond
+2020-03-10 22:35:13 INFO  DiscoveryClient-CacheRefreshExecutor-2 org.apache.http.impl.client.DefaultHttpClient Retrying request to {}->http://localhost:8801
+2020-03-10 22:35:13 INFO  http-nio-8802-exec-10 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Unregistering application AUTH with eureka with status DOWN
+2020-03-10 22:35:13 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802: registering service...
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-10 22:35:13 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802 - registration status: 204
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-03-10 22:35:13 INFO  SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Shutting down DiscoveryClient ...
+2020-03-10 22:35:16 INFO  SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Unregistering ...
+2020-03-10 22:35:16 INFO  SpringContextShutdownHook com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802 - deregister  status: 200
+2020-03-10 22:35:16 INFO  SpringContextShutdownHook com.netflix.discovery.DiscoveryClient Completed shut down of DiscoveryClient
+2020-03-10 22:35:23 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:35:24 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:35:24 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:35:24 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-03-10 22:35:24 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=e13f30c5-690e-3237-9db2-39a85a42a1dc
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$70d59556] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7c112f5f' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:24 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:35:25 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:35:25 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:35:25 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:35:25 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:35:25 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:35:25 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1337 ms
+2020-03-10 22:35:25 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:35:25 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@35b17c06
+2020-03-10 22:35:25 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:35:25 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:35:25 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:35:25 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:35:26 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:35:26 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:35:26 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:35:26 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:35:26 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-authenticationManagerBean
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-endpoints
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-tokenStore
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-ClientDetailsServiceConfigurer
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-jwtAccessTokenConverter
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-defaultTokenServices
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-oAuth2RequestFactory
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-resourceOwnerPasswordTokenGranter
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-security
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-configure-auth
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-configure-http
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure ResourceServerConfigure-configure-resources
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure ResourceServerConfigure-configure-http
+2020-03-10 22:35:27 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure /captcha
+2020-03-10 22:35:27 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26865b57, org.springframework.security.web.context.SecurityContextPersistenceFilter@789dd6bf, org.springframework.security.web.header.HeaderWriterFilter@126a9a3d, org.springframework.security.web.authentication.logout.LogoutFilter@3c346c45, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@c67395, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ab1ad9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48b3b1b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46894dc5, org.springframework.security.web.session.SessionManagementFilter@1b60d324, org.springframework.security.web.access.ExceptionTranslationFilter@6c2883b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2487e20]
+2020-03-10 22:35:27 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@704c3bdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@3386ed8, org.springframework.security.web.header.HeaderWriterFilter@16e07bae, org.springframework.security.web.authentication.logout.LogoutFilter@4571cebe, com.zgcenv.elip.common.filter.ValidateCodeFilter@18a98913, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@727453a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67dc6b48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37986daf, org.springframework.security.web.session.SessionManagementFilter@598778cc, org.springframework.security.web.access.ExceptionTranslationFilter@3e39f08c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26f5e45d]
+2020-03-10 22:35:27 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72001c71, org.springframework.security.web.context.SecurityContextPersistenceFilter@12670e55, org.springframework.security.web.header.HeaderWriterFilter@604f376a, org.springframework.security.web.authentication.logout.LogoutFilter@32ba5c65, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@6dc2279c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3fc1abf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43fd77d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a90fcaa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e7b0bec, org.springframework.security.web.session.SessionManagementFilter@5432dca2, org.springframework.security.web.access.ExceptionTranslationFilter@1488a861, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67ceeffd]
+2020-03-10 22:35:27 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:35:27 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-10 22:35:28 INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-10 22:35:28 INFO  main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Application version is -1: true
+2020-03-10 22:35:28 INFO  main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:35:29 INFO  main com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:35:29 INFO  main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
+2020-03-10 22:35:29 INFO  main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-10 22:35:29 INFO  main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1583850929092 with initial instances count: 1
+2020-03-10 22:35:29 INFO  main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application AUTH with eureka with status UP
+2020-03-10 22:35:29 INFO  main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1583850929096, current=UP, previous=STARTING]
+2020-03-10 22:35:29 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802: registering service...
+2020-03-10 22:35:29 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:35:29 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802 - registration status: 204
+2020-03-10 22:35:29 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8802 (http) with context path '/auth'
+2020-03-10 22:35:29 INFO  main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8802
+2020-03-10 22:35:29 INFO  main com.zgcenv.elip.auth.AuthApplication Started AuthApplication in 6.546 seconds (JVM running for 7.47)
+2020-03-10 22:35:29 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner   _   _   _   _   _   _   _   _
+2020-03-10 22:35:29 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner  / \ / \ / \ / \ / \ / \ / \ / \
+2020-03-10 22:35:29 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner ( c | o | m | p | l | e | t | e )
+2020-03-10 22:35:29 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
+2020-03-10 22:35:29 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner Auth 启动完毕，时间：2020-03-10T22:35:29.325
+2020-03-10 22:35:29 INFO  RMI TCP Connection(1)-192.168.43.88 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-10 22:35:29 INFO  RMI TCP Connection(1)-192.168.43.88 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-03-10 22:35:29 INFO  RMI TCP Connection(1)-192.168.43.88 org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2020-03-10 22:35:29 INFO  boundedElastic-1 io.lettuce.core.EpollProvider Starting without optional epoll library
+2020-03-10 22:35:29 INFO  boundedElastic-1 io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 22:36:33 INFO  http-nio-8802-exec-2 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 22:36:54 INFO  main com.zgcenv.elip.auth.AuthApplication No active profile set, falling back to default profiles: default
+2020-03-10 22:36:55 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-10 22:36:55 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-10 22:36:55 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-03-10 22:36:55 INFO  main org.springframework.cloud.context.scope.GenericScope BeanFactory id=e13f30c5-690e-3237-9db2-39a85a42a1dc
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$25338625] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@36224f93' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-10 22:36:55 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8802 (http)
+2020-03-10 22:36:55 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:36:55 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-03-10 22:36:55 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-10 22:36:56 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring embedded WebApplicationContext
+2020-03-10 22:36:56 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1509 ms
+2020-03-10 22:36:56 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:36:56 INFO  main com.netflix.config.DynamicPropertyFactory DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@a323a5b
+2020-03-10 22:36:56 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-03-10 22:36:56 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-03-10 22:36:56 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-03-10 22:36:56 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [1] datasource,primary datasource named [base]
+2020-03-10 22:36:57 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:36:57 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:36:57 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.workerId
+2020-03-10 22:36:57 INFO  main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Autowired annotation is not supported on static fields: private static long com.zgcenv.elip.common.utils.CustomIdGenerator.datacenterId
+2020-03-10 22:36:57 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-authenticationManagerBean
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-endpoints
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-tokenStore
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-ClientDetailsServiceConfigurer
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-jwtAccessTokenConverter
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-defaultTokenServices
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-oAuth2RequestFactory
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-resourceOwnerPasswordTokenGranter
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.AuthorizationServerConfigure AuthorizationServerConfigure-security
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-configure-auth
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.SecurityConfigure SecurityConfigure-configure-http
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure ResourceServerConfigure-configure-resources
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure ResourceServerConfigure-configure-http
+2020-03-10 22:36:58 INFO  main com.zgcenv.elip.auth.configure.ResourceServerConfigure /captcha
+2020-03-10 22:36:58 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@162e29a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@782143e8, org.springframework.security.web.header.HeaderWriterFilter@4a9412c4, org.springframework.security.web.authentication.logout.LogoutFilter@328bc067, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7488c183, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a4bd699, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d99d327, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54b96813, org.springframework.security.web.session.SessionManagementFilter@65fa4a07, org.springframework.security.web.access.ExceptionTranslationFilter@66859ea9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@178ebac3]
+2020-03-10 22:36:58 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cf1bbd3, org.springframework.security.web.context.SecurityContextPersistenceFilter@77978658, org.springframework.security.web.header.HeaderWriterFilter@4bc9451b, org.springframework.security.web.authentication.logout.LogoutFilter@22e95960, com.zgcenv.elip.common.filter.ValidateCodeFilter@4d174189, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@498b697, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f8da82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@204a02a4, org.springframework.security.web.session.SessionManagementFilter@74a3160d, org.springframework.security.web.access.ExceptionTranslationFilter@2a2b3aff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cc81ea1]
+2020-03-10 22:36:58 INFO  main org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ee5c08d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e75af65, org.springframework.security.web.header.HeaderWriterFilter@25a52a60, org.springframework.security.web.authentication.logout.LogoutFilter@2bee1c13, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@e296794, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@28e24663, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25a2c4dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29d81c22, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f996445, org.springframework.security.web.session.SessionManagementFilter@15549dd7, org.springframework.security.web.access.ExceptionTranslationFilter@430f0c63, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fab0394]
+2020-03-10 22:36:58 INFO  main com.netflix.config.sources.URLConfigurationSource To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-10 22:36:58 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-10 22:36:59 INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-10 22:36:59 INFO  main org.springframework.cloud.netflix.eureka.InstanceInfoFactory Setting initial instance status as: STARTING
+2020-03-10 22:36:59 INFO  main com.netflix.discovery.DiscoveryClient Initializing Eureka in region us-east-1
+2020-03-10 22:36:59 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON encoding codec LegacyJacksonJson
+2020-03-10 22:36:59 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using JSON decoding codec LegacyJacksonJson
+2020-03-10 22:36:59 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML encoding codec XStreamXml
+2020-03-10 22:36:59 INFO  main com.netflix.discovery.provider.DiscoveryJerseyProvider Using XML decoding codec XStreamXml
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Disable delta property : false
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Single vip registry refresh property : null
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Force full registry fetch : false
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Application is null : false
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Registered Applications size is zero : true
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Application version is -1: true
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Getting all instance registry info from the eureka server
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient The response status is 200
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Starting heartbeat executor: renew interval is: 20
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.InstanceInfoReplicator InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Discovery Client initialized at timestamp 1583851020409 with initial instances count: 1
+2020-03-10 22:37:00 INFO  main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Registering application AUTH with eureka with status UP
+2020-03-10 22:37:00 INFO  main com.netflix.discovery.DiscoveryClient Saw local status change event StatusChangeEvent [timestamp=1583851020413, current=UP, previous=STARTING]
+2020-03-10 22:37:00 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802: registering service...
+2020-03-10 22:37:00 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8802"]
+2020-03-10 22:37:00 INFO  DiscoveryClient-InstanceInfoReplicator-0 com.netflix.discovery.DiscoveryClient DiscoveryClient_AUTH/DESKTOP-562NTM1:Auth:8802 - registration status: 204
+2020-03-10 22:37:00 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8802 (http) with context path '/auth'
+2020-03-10 22:37:00 INFO  main org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Updating port to 8802
+2020-03-10 22:37:00 INFO  main com.zgcenv.elip.auth.AuthApplication Started AuthApplication in 7.167 seconds (JVM running for 8.32)
+2020-03-10 22:37:00 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner   _   _   _   _   _   _   _   _
+2020-03-10 22:37:00 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner  / \ / \ / \ / \ / \ / \ / \ / \
+2020-03-10 22:37:00 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner ( c | o | m | p | l | e | t | e )
+2020-03-10 22:37:00 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner  \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
+2020-03-10 22:37:00 INFO  main com.zgcenv.elip.auth.runner.StartedUpRunner Auth 启动完毕，时间：2020-03-10T22:37:00.664
+2020-03-10 22:37:01 INFO  RMI TCP Connection(2)-192.168.43.88 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/auth] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-10 22:37:01 INFO  RMI TCP Connection(2)-192.168.43.88 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-03-10 22:37:01 INFO  RMI TCP Connection(2)-192.168.43.88 org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2020-03-10 22:37:01 INFO  boundedElastic-1 io.lettuce.core.EpollProvider Starting without optional epoll library
+2020-03-10 22:37:01 INFO  boundedElastic-1 io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2020-03-10 22:37:08 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 22:37:08 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 22:37:08 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 22:37:08 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 22:37:08 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 22:37:13 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:00:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:00:07 INFO  DiscoveryClient-CacheRefreshExecutor-0 org.apache.http.impl.client.DefaultHttpClient I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8801: Software caused connection abort: socket write error
+2020-03-10 23:00:07 INFO  DiscoveryClient-CacheRefreshExecutor-0 org.apache.http.impl.client.DefaultHttpClient Retrying request to {}->http://localhost:8801
+2020-03-10 23:00:07 INFO  http-nio-8802-exec-4 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 23:00:17 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:00:17 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:00:17 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:00:17 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:00:17 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 23:00:20 INFO  http-nio-8802-exec-2 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:03:32 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:03:32 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:03:32 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:03:32 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:03:32 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 23:03:36 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:03:36 INFO  http-nio-8802-exec-7 com.zgcenv.elip.auth.handler.ElipWebResponseExceptionTranslator ElipWebResponseExceptionTranslator
+2020-03-10 23:03:43 INFO  http-nio-8802-exec-9 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:03:43 INFO  http-nio-8802-exec-9 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:03:43 INFO  http-nio-8802-exec-9 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:03:43 INFO  http-nio-8802-exec-9 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:03:43 INFO  http-nio-8802-exec-9 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 23:03:43 INFO  http-nio-8802-exec-9 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:05:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:10:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:15:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:20:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:25:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:30:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:35:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:40:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:45:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:48:46 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:48:46 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:48:46 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:48:46 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:48:46 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-4849
+2020-03-10 23:48:55 INFO  http-nio-8802-exec-3 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:48:55 INFO  http-nio-8802-exec-3 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:48:55 INFO  http-nio-8802-exec-3 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalnull|
+2020-03-10 23:48:55 INFO  http-nio-8802-exec-3 com.zgcenv.elip.common.filter.ValidateCodeFilter null
+2020-03-10 23:49:11 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:49:11 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:49:11 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:49:11 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:49:11 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-9232
+2020-03-10 23:49:11 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:49:13 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:49:13 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:49:13 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:49:13 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:49:13 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-9232
+2020-03-10 23:49:13 INFO  http-nio-8802-exec-6 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:49:15 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:49:15 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:49:15 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:49:15 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:49:15 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-9232
+2020-03-10 23:49:15 INFO  http-nio-8802-exec-7 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:50:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:54:27 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:54:27 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:54:27 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalBasic ZmViczoxMjM0NTY=|febs
+2020-03-10 23:54:27 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter password
+2020-03-10 23:54:27 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-validateCode:key-12345678 code-9232
+2020-03-10 23:54:27 INFO  http-nio-8802-exec-10 com.zgcenv.elip.common.service.impl.ElipUserDetailsService loadUserByUsername
+2020-03-10 23:54:54 INFO  http-nio-8802-exec-1 com.zgcenv.elip.common.handler.ElipAuthenticationEntryPoint ElipAuthenticationEntryPoint-token无效
+2020-03-10 23:55:07 INFO  AsyncResolver-bootstrap-executor-0 com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Resolving eureka endpoints via configuration
+2020-03-10 23:55:13 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:55:13 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:55:13 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalbearer d973678a-d447-4141-9715-523282c9bebb|
+2020-03-10 23:55:13 INFO  http-nio-8802-exec-4 com.zgcenv.elip.common.filter.ValidateCodeFilter null
+2020-03-10 23:56:17 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternal
+2020-03-10 23:56:17 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-getClientId
+2020-03-10 23:56:17 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter ValidateCodeFilter-doFilterInternalbearer d973678a-d447-4141-9715-523282c9bebb|
+2020-03-10 23:56:17 INFO  http-nio-8802-exec-5 com.zgcenv.elip.common.filter.ValidateCodeFilter null

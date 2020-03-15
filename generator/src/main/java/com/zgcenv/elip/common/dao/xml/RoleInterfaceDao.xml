@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zgcenv.elip.common.dao.RoleInterfaceDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zgcenv.elip.common.entity.RoleInterface">
+        <id column="id" property="id" />
+        <result column="roleId" property="roleId" />
+        <result column="interfaceId" property="interfaceId" />
+        <result column="insertTime" property="insertTime" />
+        <result column="updateTime" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, roleId, interfaceId, insertTime, updateTime
+    </sql>
+
+</mapper>
