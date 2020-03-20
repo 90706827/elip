@@ -2,7 +2,7 @@ server:
   port: 8803
 spring:
   application:
-    name: Resource
+    name: resource
 security:
   oauth2:
     resource:

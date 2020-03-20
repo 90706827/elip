@@ -54,8 +54,11 @@ eureka:
     lease-renewal-interval-in-seconds: 20
   client:
     register-with-eureka: true
-    fetch-registry: true
+    fetch-registry: false
     instance-info-replication-interval-seconds: 30
     registry-fetch-interval-seconds: 3
     serviceUrl:
       defaultZone: http://admin:123456@localhost:8800/register/eureka/
+ribbon:
+  eureka:
+    enabled: true
