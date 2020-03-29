@@ -3,9 +3,8 @@ package com.zgcenv.elip.common.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableField;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -17,56 +16,66 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-15
+ * @since 2020-03-24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("sys_user_role")
+@TableName("tu_user_role")
 public class UserRole extends Model<UserRole> {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 用户角色表
+     * 用户-角色
      */
-    @TableId(value = "id", type = IdType.ASSIGN_ID)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
      * 用户
      */
-    @TableField("userId")
     private Long userId;
 
     /**
      * 角色
      */
-    @TableField("roleId")
     private Long roleId;
 
     /**
-     * 新增时间
+     * 插入时间
      */
-    @TableField("insertTime")
     private LocalDateTime insertTime;
+
+    /**
+     * 插入用户
+     */
+    private Long insertBy;
 
     /**
      * 更新时间
      */
-    @TableField("updateTime")
     private LocalDateTime updateTime;
+
+    /**
+     * 更新用户
+     */
+    private Long updateBy;
 
 
     public static final String ID = "id";
 
-    public static final String USERID = "userId";
+    public static final String USER_ID = "user_id";
 
-    public static final String ROLEID = "roleId";
+    public static final String ROLE_ID = "role_id";
 
-    public static final String INSERTTIME = "insertTime";
+    public static final String INSERT_TIME = "insert_time";
 
-    public static final String UPDATETIME = "updateTime";
+    public static final String INSERT_BY = "insert_by";
+
+    public static final String UPDATE_TIME = "update_time";
+
+    public static final String UPDATE_BY = "update_by";
 
     @Override
     protected Serializable pkVal() {

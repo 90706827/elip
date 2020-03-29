@@ -26,6 +26,8 @@
         <module>generator</module>
         <module>gateway</module>
         <module>resource</module>
+        <module>service</module>
+        <module>official</module>
     </modules>
 
     <properties>

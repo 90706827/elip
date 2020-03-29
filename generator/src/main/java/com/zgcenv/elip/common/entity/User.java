@@ -3,9 +3,8 @@ package com.zgcenv.elip.common.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableField;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -17,12 +16,12 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-15
+ * @since 2020-03-24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("sys_user")
+@TableName("tu_user")
 public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
@@ -30,14 +29,15 @@ public class User extends Model<User> {
     /**
      * 用户表
      */
-    @TableId(value = "id", type = IdType.ASSIGN_ID)
-    private Long id;
+    @TableId(value = "user_id", type = IdType.AUTO)
+    private Long userId;
+
+    private String nickname;
 
     /**
      * 用户名称
      */
-    @TableField("loginName")
-    private String loginName;
+    private String username;
 
     /**
      * 密码
@@ -45,23 +45,12 @@ public class User extends Model<User> {
     private String password;
 
     /**
-     * 密码盐
-     */
-    private String salt;
-
-    /**
-     * 昵称
-     */
-    @TableField("displayName")
-    private String displayName;
-
-    /**
-     * 手机号
+     * 注册手机号码
      */
     private String phone;
 
     /**
-     * 邮箱
+     * 电子邮箱
      */
     private String email;
 
@@ -73,36 +62,45 @@ public class User extends Model<User> {
     /**
      * 头像
      */
-    @TableField("headImg")
-    private String headImg;
+    private String photo;
 
     /**
-     * 0-待激活；1-待认证；2-已激活；3-已认证；4-已注销；5-已冻结；9-未通过
+     * 密码盐
+     */
+    private String salt;
+
+    /**
+     * 状态：0-待激活，1-正常，2-冻结
      */
     private String status;
 
     /**
-     * 新增日期
+     * 性别：1-男，2-女
      */
-    @TableField("insertTime")
+    private Integer gender;
+
     private LocalDateTime insertTime;
 
     /**
-     * 修改日期
+     * 插入用户
      */
-    @TableField("updateTime")
+    private Long insertBy;
+
     private LocalDateTime updateTime;
 
+    /**
+     * 更新用户
+     */
+    private Long updateBy;
 
-    public static final String ID = "id";
 
-    public static final String LOGINNAME = "loginName";
+    public static final String USER_ID = "user_id";
+
+    public static final String NICKNAME = "nickname";
+
+    public static final String USERNAME = "username";
 
     public static final String PASSWORD = "password";
-
-    public static final String SALT = "salt";
-
-    public static final String DISPLAYNAME = "displayName";
 
     public static final String PHONE = "phone";
 
@@ -110,17 +108,25 @@ public class User extends Model<User> {
 
     public static final String TOKEN = "token";
 
-    public static final String HEADIMG = "headImg";
+    public static final String PHOTO = "photo";
+
+    public static final String SALT = "salt";
 
     public static final String STATUS = "status";
 
-    public static final String INSERTTIME = "insertTime";
+    public static final String GENDER = "gender";
 
-    public static final String UPDATETIME = "updateTime";
+    public static final String INSERT_TIME = "insert_time";
+
+    public static final String INSERT_BY = "insert_by";
+
+    public static final String UPDATE_TIME = "update_time";
+
+    public static final String UPDATE_BY = "update_by";
 
     @Override
     protected Serializable pkVal() {
-        return this.id;
+        return this.userId;
     }
 
 }

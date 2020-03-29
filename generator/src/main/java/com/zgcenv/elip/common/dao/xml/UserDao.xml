@@ -4,23 +4,26 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.zgcenv.elip.common.entity.User">
-        <id column="id" property="id" />
-        <result column="loginName" property="loginName" />
+        <id column="user_id" property="userId" />
+        <result column="nickname" property="nickname" />
+        <result column="username" property="username" />
         <result column="password" property="password" />
-        <result column="salt" property="salt" />
-        <result column="displayName" property="displayName" />
         <result column="phone" property="phone" />
         <result column="email" property="email" />
         <result column="token" property="token" />
-        <result column="headImg" property="headImg" />
+        <result column="photo" property="photo" />
+        <result column="salt" property="salt" />
         <result column="status" property="status" />
-        <result column="insertTime" property="insertTime" />
-        <result column="updateTime" property="updateTime" />
+        <result column="gender" property="gender" />
+        <result column="insert_time" property="insertTime" />
+        <result column="insert_by" property="insertBy" />
+        <result column="update_time" property="updateTime" />
+        <result column="update_by" property="updateBy" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, loginName, password, salt, displayName, phone, email, token, headImg, status, insertTime, updateTime
+        user_id, nickname, username, password, phone, email, token, photo, salt, status, gender, insert_time, insert_by, update_time, update_by
     </sql>
 
 </mapper>

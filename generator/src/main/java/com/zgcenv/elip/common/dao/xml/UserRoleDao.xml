@@ -5,15 +5,17 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.zgcenv.elip.common.entity.UserRole">
         <id column="id" property="id" />
-        <result column="userId" property="userId" />
-        <result column="roleId" property="roleId" />
-        <result column="insertTime" property="insertTime" />
-        <result column="updateTime" property="updateTime" />
+        <result column="user_id" property="userId" />
+        <result column="role_id" property="roleId" />
+        <result column="insert_time" property="insertTime" />
+        <result column="insert_by" property="insertBy" />
+        <result column="update_time" property="updateTime" />
+        <result column="update_by" property="updateBy" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, userId, roleId, insertTime, updateTime
+        id, user_id, role_id, insert_time, insert_by, update_time, update_by
     </sql>
 
 </mapper>

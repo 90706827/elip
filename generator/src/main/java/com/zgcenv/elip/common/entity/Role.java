@@ -3,9 +3,8 @@ package com.zgcenv.elip.common.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableField;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -17,52 +16,71 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-15
+ * @since 2020-03-24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("sys_role")
+@TableName("tu_role")
 public class Role extends Model<Role> {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 角色表
+     * 角色
      */
-    @TableId(value = "id", type = IdType.ASSIGN_ID)
-    private Long id;
+    @TableId(value = "role_id", type = IdType.AUTO)
+    private Long roleId;
 
     /**
-     * 角色名
+     * 角色名称
      */
-    @TableField("roleName")
-    private String roleName;
+    private String name;
 
     /**
-     * 新增角色
+     * 英文名称
      */
-    @TableField("insertTime")
+    private String ename;
+
+    /**
+     * 注释说明
+     */
+    private String description;
+
     private LocalDateTime insertTime;
 
     /**
-     * 更新角色
+     * 插入用户
      */
-    @TableField("updateTime")
+    private Long insertBy;
+
     private LocalDateTime updateTime;
 
+    /**
+     * 更新用户
+     */
+    private Long updateBy;
 
-    public static final String ID = "id";
 
-    public static final String ROLENAME = "roleName";
+    public static final String ROLE_ID = "role_id";
 
-    public static final String INSERTTIME = "insertTime";
+    public static final String NAME = "name";
 
-    public static final String UPDATETIME = "updateTime";
+    public static final String ENAME = "ename";
+
+    public static final String DESCRIPTION = "description";
+
+    public static final String INSERT_TIME = "insert_time";
+
+    public static final String INSERT_BY = "insert_by";
+
+    public static final String UPDATE_TIME = "update_time";
+
+    public static final String UPDATE_BY = "update_by";
 
     @Override
     protected Serializable pkVal() {
-        return this.id;
+        return this.roleId;
     }
 
 }

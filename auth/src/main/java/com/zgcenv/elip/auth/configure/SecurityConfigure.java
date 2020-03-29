@@ -1,10 +1,11 @@
 package com.zgcenv.elip.auth.configure;
 
 import com.zgcenv.elip.auth.service.impl.ElipUserDetailsService;
-import com.zgcenv.elip.common.filter.ValidateCodeFilter;
+import com.zgcenv.elip.auth.filter.ValidateCodeFilter;
 import com.zgcenv.elip.common.utils.ParamsConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -12,6 +13,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -33,8 +35,12 @@ public class SecurityConfigure extends WebSecurityConfigurerAdapter {
     private ElipUserDetailsService elipUserDetailsService;
     @Autowired
     private ValidateCodeFilter validateCodeFilter;
-    @Resource
-    private PasswordEncoder passwordEncoder;
+
+    @Bean
+    @ConditionalOnMissingBean(value = PasswordEncoder.class)
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Bean
     @Override
@@ -60,7 +66,7 @@ public class SecurityConfigure extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         log.info("SecurityConfigure-configure-auth");
         auth.userDetailsService(elipUserDetailsService)
-                .passwordEncoder(passwordEncoder);
+                .passwordEncoder(passwordEncoder());
     }
 
 }

@@ -10,12 +10,9 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 /**
  * @author admin
  */
-@EnableElipRedis
 @EnableElipExceptionHandler
 @EnableElipServerProtect
-@EnableEurekaClient
 @EnableElipValidateCode
-@EnableElipPasswordConfigure
 @MapperScan("com.zgcenv.elip.auth.dao")
 @SpringBootApplication(scanBasePackages = "com.zgcenv.elip")
 @EnableGlobalMethodSecurity(prePostEnabled = true)

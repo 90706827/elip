@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-15
+ * @since 2020-03-24
  */
 public interface MenuService extends IService<Menu> {
 

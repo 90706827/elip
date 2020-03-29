@@ -83,7 +83,7 @@ public class Application {
                         .setDriverName(Driver.class.getName())
                         .setUsername("root")
                         .setPassword("root")
-                        .setUrl("jdbc:mysql://localhost:3306/hzx?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true")
+                        .setUrl("jdbc:mysql://localhost:3306/zgcenv?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true")
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
@@ -91,7 +91,7 @@ public class Application {
                         // .setDbColumnUnderline(true)//全局下划线命名
                         .setNaming(NamingStrategy.underline_to_camel)// 表名生成策略
                         .setColumnNaming(NamingStrategy.underline_to_camel)
-                        .setTablePrefix(new String[]{"sys_", "mp_"})// 此处可以修改为您的表前缀
+                        .setTablePrefix(new String[]{"sys_", "mp_", "tb_", "tu_"})// 此处可以修改为您的表前缀
                         // .setInclude(new String[] { "user" }) // 需要生成的表
                         // .setExclude(new String[]{"test"}) // 排除生成的表
                         .setSuperEntityColumns(new String[]{"test_id"}) // 自定义实体，公共字段
