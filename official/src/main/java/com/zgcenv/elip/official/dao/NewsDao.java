@@ -1,5 +1,6 @@
 package com.zgcenv.elip.official.dao;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -21,5 +22,4 @@ import org.springframework.stereotype.Repository;
 public interface NewsDao extends BaseMapper<News> {
 
     IPage<NewsColumnsVo> listPageVo(@Param("pg") Page<NewsColumnsVo> page, @Param("query") NewQuery query);
-
 }

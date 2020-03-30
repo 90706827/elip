@@ -1,5 +1,6 @@
 package com.zgcenv.elip.official.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -10,6 +11,7 @@ import com.zgcenv.elip.official.query.NewQuery;
 import com.zgcenv.elip.official.query.NewSave;
 import com.zgcenv.elip.official.query.NewUpdate;
 import com.zgcenv.elip.official.service.NewsService;
+import org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -86,5 +88,10 @@ public class NewsServiceImpl extends ServiceImpl<NewsDao, News> implements NewsS
     @Override
     public News selectNews(Long id) {
         return baseMapper.selectById(id);
+    }
+
+    @Override
+    public void delNewsByColumnId(Long columnId) {
+        baseMapper.delete(new QueryWrapper<News>().eq("column_id",columnId));
     }
 }

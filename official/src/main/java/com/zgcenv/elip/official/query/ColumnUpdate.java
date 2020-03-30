@@ -2,7 +2,9 @@ package com.zgcenv.elip.official.query;
 
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
 /**
@@ -15,7 +17,8 @@ import javax.validation.constraints.Size;
 @Data
 public class ColumnUpdate {
 
-    @Pattern(regexp = "[0-9]{19}", message = "ID不正确！")
+    @NotNull(message = "ID不正确！")
+    @Positive(message = "ID不正确！")
     private Long Id;
     @Size(min = 1,max = 50,message = "栏目名称不能为空，长度不能大于50个字符！")
     private String title;

@@ -33,13 +33,16 @@ spring:
       min-idle: 5
       connection-test-query: select 1
       pool-name: FebsHikariCP
+  groovy:
+    template:
+      check-template-location: false
 mybatis:
   #开启驼峰命名法
   configuration:
     map-underscore-to-camel-case: true
 mybatis-plus:
   type-aliases-package: com.zgcenv.elip.official.entity
-  mapper-locations: classpath:/mapper/*Dao.xml
+  mapper-locations: classpath:mapper/*Dao.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     jdbc-type-for-null: null
@@ -52,9 +55,3 @@ jwt:
   secret: javainuse
 swagger:
   enable: true
-  basic:
-    path: /swagger-ui.html
-    enabled: true
-  user:
-    name: admin
-    password: 123456

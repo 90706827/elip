@@ -34,7 +34,7 @@ import javax.validation.constraints.Pattern;
  * @Date 2019/10/21 23:32
  * @Version 1.0
  **/
-@Api(tags = "2、用户")
+@Api(tags = "2、用户管理")
 @RestController
 @RequestMapping(value = "/user")
 public class UserController {

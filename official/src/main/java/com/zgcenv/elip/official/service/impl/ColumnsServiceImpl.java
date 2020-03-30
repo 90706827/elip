@@ -5,12 +5,16 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zgcenv.elip.official.dao.ColumnsDao;
+import com.zgcenv.elip.official.dao.NewsDao;
 import com.zgcenv.elip.official.entity.Columns;
-import com.zgcenv.elip.official.query.ColumnSave;
+import com.zgcenv.elip.official.entity.News;
 import com.zgcenv.elip.official.query.ColumnQuery;
+import com.zgcenv.elip.official.query.ColumnSave;
 import com.zgcenv.elip.official.query.ColumnUpdate;
 import com.zgcenv.elip.official.service.ColumnsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -26,6 +30,8 @@ import java.util.Map;
  */
 @Service
 public class ColumnsServiceImpl extends ServiceImpl<ColumnsDao, Columns> implements ColumnsService {
+    @Autowired
+    private NewsDao newsDao;
 
     @Override
     public Map<String, Object> list(ColumnQuery query) {
@@ -61,8 +67,10 @@ public class ColumnsServiceImpl extends ServiceImpl<ColumnsDao, Columns> impleme
         baseMapper.updateById(columns);
     }
 
+    @Transactional(rollbackFor = RuntimeException.class)
     @Override
     public void delColumns(Long id) {
+        newsDao.delete(new QueryWrapper<News>().eq("column_id", id));
         baseMapper.deleteById(id);
     }
 

@@ -2,7 +2,8 @@ package com.zgcenv.elip.official.query;
 
 import lombok.Data;
 
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
 
 /**
  * @ClassName PageBase
@@ -14,9 +15,11 @@ import javax.validation.constraints.Pattern;
 @Data
 public class PageBase {
 
-    @Pattern(regexp = "[1-9]{1,3}",message = "页数不正确！")
+    @NotNull(message = "页数不正确！")
+    @PositiveOrZero(message = "页数不正确！")
     private Integer page;
 
-    @Pattern(regexp = "[1-9]{1,3}",message = "每页条数不正确！")
+    @NotNull(message = "每页条数不正确！")
+    @PositiveOrZero(message = "每页条数不正确！")
     private Integer size;
 }

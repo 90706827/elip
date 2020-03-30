@@ -24,7 +24,7 @@ import javax.validation.constraints.Pattern;
  * @Date 2020/3/27 12:54
  * @Version 1.0
  **/
-@Api(tags = "4、新闻")
+@Api(tags = "4、新闻管理")
 @RestController
 @RequestMapping(value = "/news")
 public class NewsController {
