@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-24
+ * @since 2020-03-31
  */
 @Service
 public class PrivilegeServiceImpl extends ServiceImpl<PrivilegeDao, Privilege> implements PrivilegeService {

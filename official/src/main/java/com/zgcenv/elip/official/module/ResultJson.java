@@ -76,6 +76,10 @@ public class ResultJson implements Serializable {
         return ResponseEntity.ok(new ResultJson(500, message, new HashMap<>(0)));
     }
 
+    public static ResponseEntity<?> failed(int code, String message) {
+        return ResponseEntity.ok(new ResultJson(code, message, new HashMap<>(0)));
+    }
+
     public static ResponseEntity<?> failed(RespCode respCode) {
         return ResponseEntity.ok(new ResultJson(respCode.getCode(), respCode.getMessage(), new HashMap<>(0)));
     }

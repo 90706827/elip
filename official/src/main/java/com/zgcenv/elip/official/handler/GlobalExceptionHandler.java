@@ -53,7 +53,7 @@ public class GlobalExceptionHandler {
         } else {
             msg = "系统繁忙，请稍后重试...";
         }
-        return ResultJson.failed(msg);
+        return ResultJson.failed(600, msg);
     }
 
     /**

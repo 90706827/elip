@@ -169,7 +169,7 @@
                     <excludes>
                         <exclude>**/*.conf</exclude>
                         <exclude>**/*.yml</exclude>
-                        <exclude>**/*.xml</exclude>
+                        <include>**/*.xml</include>
                         <exclude>**/*.groovy</exclude>
                         <exclude>**/*.sh</exclude>
                         <exclude>**/*.ini</exclude>
@@ -200,7 +200,7 @@
                                         <include>**/*.sh</include>
                                         <include>**/*.ini</include>
                                     </includes>
-                                    <filtering>true</filtering>
+                                    <filtering>false</filtering>
                                 </resource>
                             </resources>
                         </configuration>

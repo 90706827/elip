@@ -42,7 +42,7 @@ mybatis:
     map-underscore-to-camel-case: true
 mybatis-plus:
   type-aliases-package: com.zgcenv.elip.official.entity
-  mapper-locations: classpath:mapper/*Dao.xml
+  mapper-locations: classpath*:mapper/*Dao.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     jdbc-type-for-null: null
