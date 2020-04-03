@@ -10,16 +10,15 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-24
+ * @since 2020-04-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -58,6 +57,11 @@ public class News extends Model<News> {
     private String context;
 
     /**
+     * 排序
+     */
+    private Integer sorting;
+
+    /**
      * 查看数
      */
     private Integer lookSum;
@@ -91,6 +95,8 @@ public class News extends Model<News> {
     public static final String DESCRIPTION = "description";
 
     public static final String CONTEXT = "context";
+
+    public static final String SORTING = "sorting";
 
     public static final String LOOK_SUM = "look_sum";
 

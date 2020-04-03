@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-31
+ * @since 2020-04-02
  */
 public interface NewsService extends IService<News> {
 

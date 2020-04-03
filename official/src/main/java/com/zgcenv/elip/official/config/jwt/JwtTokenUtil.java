@@ -26,7 +26,7 @@ public class JwtTokenUtil implements Serializable {
      * @Description 单位毫秒
      * @Date 2019/11/18 10:12
      **/
-    public static final long JWT_TOKEN_VALIDITY = 24 * 60 * 60 * 1000;
+    public static final long JWT_TOKEN_VALIDITY = 7 * 24 * 60 * 60 * 1000;
 
     @Value("${jwt.secret}")
     private String secret;

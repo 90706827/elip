@@ -31,4 +31,6 @@ public class NewSave {
     @NotNull(message = "关注数不正确！")
     @PositiveOrZero(message = "关注数不正确！")
     private int followSum;
+    @NotNull(message = "排序不正确！")
+    private Integer sorting;
 }

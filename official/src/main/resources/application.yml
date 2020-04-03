@@ -3,6 +3,11 @@ server:
   servlet:
     context-path: /official
 spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 2MB
   application:
     name: Official
   security:
@@ -55,3 +60,5 @@ jwt:
   secret: javainuse
 swagger:
   enable: true
+uploadPath: D://temp
+requestPath: /images

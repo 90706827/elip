@@ -5,15 +5,17 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.zgcenv.elip.common.entity.Columns">
         <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
         <result column="title" property="title" />
         <result column="description" property="description" />
+        <result column="sorting" property="sorting" />
         <result column="insert_time" property="insertTime" />
         <result column="update_time" property="updateTime" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, title, description, insert_time, update_time
+        id, parent_id, title, description, sorting, insert_time, update_time
     </sql>
 
 </mapper>

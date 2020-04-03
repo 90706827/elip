@@ -1,22 +1,24 @@
 package com.zgcenv.elip.common.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+import java.util.Date;
+
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-31
+ * @since 2020-04-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -30,6 +32,11 @@ public class Columns extends Model<Columns> {
     private Long id;
 
     /**
+     * 父类ID
+     */
+    private Long parentId;
+
+    /**
      * 栏目标题
      */
     private String title;
@@ -40,21 +47,32 @@ public class Columns extends Model<Columns> {
     private String description;
 
     /**
+     * 栏目排序
+     */
+    private Integer sorting;
+
+    /**
      * 创建日期
      */
-    private LocalDateTime insertTime;
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH-mm-ss")
+    private Date insertTime;
 
     /**
      * 更新日期
      */
-    private LocalDateTime updateTime;
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH-mm-ss")
+    private Date updateTime;
 
 
     public static final String ID = "id";
 
+    public static final String PARENT_ID = "parent_id";
+
     public static final String TITLE = "title";
 
     public static final String DESCRIPTION = "description";
+
+    public static final String SORTING = "sorting";
 
     public static final String INSERT_TIME = "insert_time";
 

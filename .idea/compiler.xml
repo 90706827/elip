@@ -8,12 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gateway" />
         <module name="common" />
-        <module name="resource" />
+        <module name="service" />
         <module name="auth" />
         <module name="official" />
         <module name="register" />
         <module name="rsource" />
-        <module name="service" />
+        <module name="resource" />
         <module name="generator" />
       </profile>
     </annotationProcessing>

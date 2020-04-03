@@ -6,6 +6,7 @@ import com.zgcenv.elip.official.config.jwt.JwtUserDetailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -33,6 +34,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+    @Value("${requestPath}")
+    String requestPath;
     private final static Logger logger = LoggerFactory.getLogger(WebSecurityConfig.class);
     @Autowired
     private JwtUserDetailService jwtUserDetailService;
@@ -77,7 +80,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //OPTIONS请求全部放行
                 .antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 //对不认证接口放行
-                .antMatchers("/web/**").permitAll()
+                .antMatchers("/web/**", requestPath + "/**").permitAll()
                 // 其他接口全部接受验证
                 .anyRequest().authenticated().and()
                 // make sure we use stateless session; session won't be used to store user's state.
@@ -90,7 +93,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring(). antMatchers("/swagger-ui.html")
+        web.ignoring().antMatchers("/swagger-ui.html")
                 .antMatchers("/webjars/**")
                 .antMatchers("/v2/**")
                 .antMatchers("/swagger-resources/**");

@@ -10,16 +10,15 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author Mr.Jangni
- * @since 2020-03-24
+ * @since 2020-04-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -33,6 +32,11 @@ public class Columns extends Model<Columns> {
     private Long id;
 
     /**
+     * 父类ID
+     */
+    private Long parentId;
+
+    /**
      * 栏目标题
      */
     private String title;
@@ -41,6 +45,11 @@ public class Columns extends Model<Columns> {
      * 栏目描述
      */
     private String description;
+
+    /**
+     * 栏目排序
+     */
+    private Integer sorting;
 
     /**
      * 创建日期
@@ -57,9 +66,13 @@ public class Columns extends Model<Columns> {
 
     public static final String ID = "id";
 
+    public static final String PARENT_ID = "parent_id";
+
     public static final String TITLE = "title";
 
     public static final String DESCRIPTION = "description";
+
+    public static final String SORTING = "sorting";
 
     public static final String INSERT_TIME = "insert_time";
 

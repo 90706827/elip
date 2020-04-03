@@ -12,4 +12,5 @@ import lombok.Data;
 @Data
 public class ColumnQuery extends PageBase {
     private String title;
+    private Long parentId;
 }

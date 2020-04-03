@@ -48,6 +48,9 @@ public class NewsColumnsVo {
     @ApiModelProperty(value = "关注数")
     private Integer followSum;
 
+    @ApiModelProperty(value = "关注数")
+    private Integer sorting;
+
     @ApiModelProperty(value = "创建日期")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date insertTime;

@@ -1,5 +1,6 @@
 package com.zgcenv.elip.official.controller;
 
+import com.zgcenv.elip.official.handler.BusinessException;
 import com.zgcenv.elip.official.module.ResultJson;
 import com.zgcenv.elip.official.query.ColumnQuery;
 import com.zgcenv.elip.official.query.ColumnSave;
@@ -7,9 +8,7 @@ import com.zgcenv.elip.official.query.ColumnUpdate;
 import com.zgcenv.elip.official.service.ColumnsService;
 import com.zgcenv.elip.official.service.NewsService;
 import com.zgcenv.elip.official.service.RedisService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,29 +56,47 @@ public class ColumnsController {
     }
 
     @ApiOperation(value = "新增栏目")
+    @ApiResponses({
+            @ApiResponse(code = 709, message = "没有查到所属菜单!"),
+    })
     @ApiImplicitParam(paramType = "header", name = "token", value = "Token", required = false, dataType = "string")
     @ResponseBody
     @RequestMapping(value = "/saveColumns", method = RequestMethod.POST)
-    public ResponseEntity<?> saveColumns(HttpServletRequest request, @RequestBody @Validated ColumnSave column) {
+    public ResponseEntity<?> saveColumns(HttpServletRequest request, @RequestBody @Validated ColumnSave column) throws BusinessException {
         columnsService.saveColumns(column);
         return ResultJson.success();
     }
 
     @ApiOperation(value = "更新栏目")
+    @ApiResponses({
+            @ApiResponse(code = 709, message = "没有查到所属菜单!"),
+    })
     @ApiImplicitParam(paramType = "header", name = "token", value = "Token", required = false, dataType = "string")
     @ResponseBody
     @RequestMapping(value = "/updateColumns", method = RequestMethod.POST)
-    public ResponseEntity<?> updateColumns(HttpServletRequest request, @RequestBody @Validated ColumnUpdate column) {
+    public ResponseEntity<?> updateColumns(HttpServletRequest request, @RequestBody @Validated ColumnUpdate column) throws BusinessException {
         columnsService.updateColumns(column);
         return ResultJson.success();
     }
 
     @ApiOperation(value = "删除栏目")
+    @ApiResponses({
+            @ApiResponse(code = 707, message = "删除菜单新闻后再操作!"),
+            @ApiResponse(code = 708, message = "删除子菜单后再操作!"),
+    })
     @ApiImplicitParam(paramType = "header", name = "token", value = "Token", required = false, dataType = "string")
     @ResponseBody
     @RequestMapping(value = "/delColumns", method = RequestMethod.POST)
-    public ResponseEntity<?> delColumns(HttpServletRequest request, @RequestBody @Pattern(regexp = "[0-9]{19}", message = "ID不正确！") Long id) {
+    public ResponseEntity<?> delColumns(HttpServletRequest request, @RequestBody @Pattern(regexp = "[0-9]{19}", message = "ID不正确！") Long id) throws BusinessException {
         columnsService.delColumns(id);
         return ResultJson.success();
+    }
+
+    @ApiOperation(value = "栏目选择器")
+    @ApiImplicitParam(paramType = "header", name = "token", value = "Token", required = false, dataType = "string")
+    @ResponseBody
+    @RequestMapping(value = "/selectedColumns", method = RequestMethod.POST)
+    public ResponseEntity<?> selectedColumns() {
+        return ResultJson.success(columnsService.selectedColumns());
     }
 }

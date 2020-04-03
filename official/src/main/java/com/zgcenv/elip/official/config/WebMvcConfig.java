@@ -8,11 +8,13 @@ import com.zgcenv.elip.official.config.jwt.JwtTokenUtil;
 import com.zgcenv.elip.official.config.jwt.JwtUserDetailService;
 import com.zgcenv.elip.official.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.*;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -26,6 +28,11 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 public class WebMvcConfig implements WebMvcConfigurer {
+    @Value("${uploadPath}")
+    String uploadPath;
+
+    @Value("${requestPath}")
+    String requestPath;
 
     @Autowired
     private JwtUserDetailService jwtUserDetailService;
@@ -39,7 +46,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new JwtRequestInterceptor(jwtUserDetailService, jwtTokenUtil, redisService))
-                .excludePathPatterns("/web/**");
+                .excludePathPatterns("/web/**","/images/**");
     }
 
     /**
@@ -53,6 +60,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
         registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+        registry.addResourceHandler(requestPath + "/**").addResourceLocations("file:" +uploadPath+ File.separator );
     }
 
     /**

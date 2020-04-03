@@ -10,6 +10,7 @@
         <result column="head_pic" property="headPic" />
         <result column="description" property="description" />
         <result column="context" property="context" />
+        <result column="sorting" property="sorting" />
         <result column="look_sum" property="lookSum" />
         <result column="follow_sum" property="followSum" />
         <result column="insert_time" property="insertTime" />
@@ -18,7 +19,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, column_id, title, head_pic, description, context, look_sum, follow_sum, insert_time, update_time
+        id, column_id, title, head_pic, description, context, sorting, look_sum, follow_sum, insert_time, update_time
     </sql>
 
 </mapper>

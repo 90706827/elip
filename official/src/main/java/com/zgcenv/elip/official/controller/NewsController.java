@@ -1,21 +1,25 @@
 package com.zgcenv.elip.official.controller;
 
+import com.zgcenv.elip.official.entity.News;
+import com.zgcenv.elip.official.handler.BusinessException;
 import com.zgcenv.elip.official.module.ResultJson;
 import com.zgcenv.elip.official.query.NewQuery;
 import com.zgcenv.elip.official.query.NewSave;
 import com.zgcenv.elip.official.query.NewUpdate;
 import com.zgcenv.elip.official.service.NewsService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiOperation;
+import com.zgcenv.elip.official.utils.RespCode;
+import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.constraints.Pattern;
+import java.util.List;
 
 /**
  * @ClassName NewsController
@@ -78,4 +82,30 @@ public class NewsController {
         return ResultJson.success();
     }
 
+    @ApiOperation(value = "图片上传-PostMan测试")
+    @ApiResponses({
+            @ApiResponse(code = 704, message = "验证码失效！"),
+            @ApiResponse(code = 705, message = "新闻不存在！"),
+            @ApiResponse(code = 706, message = "上传图片失败！"),
+    })
+    @ApiImplicitParam(paramType = "header", name = "token", value = "Token", required = false, dataType = "string")
+    @ResponseBody
+    @RequestMapping(value = "/upload", method = RequestMethod.POST, consumes = "multipart/form-data", headers = "content-type=multipart/form-data")
+    public ResponseEntity<?> upload(@RequestParam(value = "pictures", required = true) List<MultipartFile> pictures,
+                                    @RequestParam("newId") Long newId) throws BusinessException {
+
+        if (pictures == null || pictures.size() == 0) {
+            return ResultJson.failed(RespCode.NOT_IMAGE);
+        }
+        News news = newsService.getById(newId);
+        if (StringUtils.isEmpty(news)) {
+            return ResultJson.failed(RespCode.NOT_FIND_NEWS);
+        }
+        List<String> images = newsService.upload(pictures, newId);
+
+        if (images.size() != pictures.size()) {
+            throw new BusinessException(RespCode.UPLOAD_IMAGE_FAILED);
+        }
+        return ResultJson.success(images);
+    }
 }

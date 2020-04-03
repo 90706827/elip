@@ -5,7 +5,9 @@ import com.zgcenv.elip.official.entity.News;
 import com.zgcenv.elip.official.query.NewQuery;
 import com.zgcenv.elip.official.query.NewSave;
 import com.zgcenv.elip.official.query.NewUpdate;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,4 +31,6 @@ public interface NewsService extends IService<News> {
     News selectNews(Long id);
 
     void delNewsByColumnId(Long columnId);
+
+    List<String> upload(List<MultipartFile> files, Long newId);
 }

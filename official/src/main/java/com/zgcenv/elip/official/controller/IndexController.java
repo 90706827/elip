@@ -6,6 +6,7 @@ import com.zgcenv.elip.official.config.jwt.JwtUserDetailService;
 import com.zgcenv.elip.official.entity.Users;
 import com.zgcenv.elip.official.module.JwtRequest;
 import com.zgcenv.elip.official.module.ResultJson;
+import com.zgcenv.elip.official.service.NewsService;
 import com.zgcenv.elip.official.service.RedisService;
 import com.zgcenv.elip.official.service.UsersService;
 import com.zgcenv.elip.official.utils.RespCode;
@@ -53,6 +54,8 @@ public class IndexController {
     private int telCodeTimeout = 60;
     @Autowired
     private UsersService usersService;
+    @Autowired
+    private NewsService newsService;
     @Autowired
     private PasswordEncoder passwordEncoder;
     @Autowired
@@ -124,5 +127,19 @@ public class IndexController {
         map.put("key", key);
         map.put("verCode", specCaptcha.toBase64());
         return ResultJson.success(map);
+    }
+
+    /**
+     * @Author Mr.Jangni
+     * @Description 获取验证码
+     * @Date 2019/11/18 15:04
+     * @Param [request, response]
+     * @Return org.springframework.http.ResponseEntity<?>
+     **/
+    @ApiOperation(value = "首页菜单新闻")
+    @RequestMapping(value = "/news", method = RequestMethod.POST)
+    public ResponseEntity<?> news(HttpServletRequest request, HttpServletResponse response) {
+
+        return ResultJson.success((0L));
     }
 }

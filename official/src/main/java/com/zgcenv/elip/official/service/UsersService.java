@@ -5,6 +5,7 @@ import com.zgcenv.elip.official.entity.Users;
 import com.zgcenv.elip.official.query.UserSave;
 import com.zgcenv.elip.official.query.UserQuery;
 import com.zgcenv.elip.official.query.UserUpdate;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
 
